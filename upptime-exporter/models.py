@@ -11,14 +11,15 @@ class Service:
     startTime: Sun Jan 09 2022 22:29:05 GMT+0000 (Coordinated Universal Time)
     generator: Upptime <https://github.com/upptime/upptime>
     """
-    def __init__(self, name=None, url=None, status=None, code=None, response_time=None, last_updated=None, start_time=None) -> None:
+    def __init__(self, name=None, url=None, status=None, code=None, responseTime=None, lastUpdated=None, startTime=None, generator=None) -> None:
         self._name = name
         self._url = url
         self._status = status
         self._code = code
-        self._response_time = response_time
-        self._last_updated = last_updated
-        self._start_time = start_time
+        self._response_time = responseTime
+        self._last_updated = lastUpdated
+        self._start_time = startTime
+        self._generator = generator
 
     @property
     def name(self):
